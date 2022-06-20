@@ -42,25 +42,40 @@ to setup-patches
     if pycor = 0 or pycor = 50 or pxcor = 50 or pxcor = 0 [ set pcolor gray ] ; baundry walls
 
     ; Setting 3 exits
-    if pxcor = 50  and pycor > 10 and pycor < 21 [ set pcolor green ] ; right exit
-    if pxcor = 0  and pycor > 0 and pycor < 11 [ set pcolor green ] ; left exit
-    if pycor = 50  and pxcor > 10 and pxcor < 22 [ set pcolor green ] ; top exit
+    if pxcor = 50  and pycor > 0 and pycor < 5 [ set pcolor green ] ; right exit
+    if pycor = 50  and pxcor > 20 and pxcor < 25 [ set pcolor green ] ; top exit
 
     ; Setting interal walls
-    if pxcor > 0 and pxcor < 25 and pycor = 12 [ set pcolor gray ] ; wall 1.1
-    if pxcor = 24 and pycor > 11 and pycor < 18 [ set pcolor gray ] ; wall 1.2
 
-    if pxcor = 10 and pycor > 30 and pycor < 50 [ set pcolor gray ] ; wall 2.1
-    if pxcor = 7 and pycor > 20 and pycor < 30 [ set pcolor gray ] ; wall 2.2
-    if pxcor > 6 and pxcor < 11 and pycor = 30 [ set pcolor gray ] ; wall 2.3
-    if pxcor > 6 and pxcor < 11 and pycor = 20 [ set pcolor gray ] ; wall 2.4
-
-    if pxcor = 22 and pycor > 30 and pycor < 50 [ set pcolor gray ] ; wall 3.1
-    if pxcor > 21 and pxcor < 27 and pycor = 30 [ set pcolor gray ] ; wall 3.2
-
-    if pxcor > 35 and pxcor < 50 and pycor = 9 [ set pcolor gray ] ; wall 4.1
-
-    if pxcor = 41 and pycor > 20 and pycor < 51 [ set pcolor gray ] ; wall 5.1
+    
+    if pxcor = 20 and pycor > 0 and pycor < 8 [ set pcolor gray ] ; wall 2.1
+    if pxcor = 20 and pycor > 11 and pycor < 17 [ set pcolor gray ] ; wall 2.1
+    if pxcor = 20 and pycor > 19 and pycor < 22 [ set pcolor gray ] ; wall 2.1
+    if pxcor = 20 and pycor > 24 and pycor < 28 [ set pcolor gray ] ; wall 2.1
+    if pxcor = 20 and pycor > 30 and pycor < 34 [ set pcolor gray ] ; wall 2.1
+    if pxcor = 20 and pycor > 36 and pycor < 43 [ set pcolor gray ] ; wall 2.1
+    if pxcor = 20 and pycor > 45 and pycor < 50 [ set pcolor gray ] ; wall 2.1
+    
+    if pxcor = 25 and pycor > 5 and pycor < 8 [ set pcolor gray ] ; wall 2.2
+    if pxcor = 25 and pycor > 11 and pycor < 17 [ set pcolor gray ] ; wall 2.1
+    if pxcor = 25 and pycor > 19 and pycor < 22 [ set pcolor gray ] ; wall 2.1
+    if pxcor = 25 and pycor > 24 and pycor < 28 [ set pcolor gray ] ; wall 2.1
+    if pxcor = 25 and pycor > 30 and pycor < 34 [ set pcolor gray ] ; wall 2.1
+    if pxcor = 25 and pycor > 36 and pycor < 43 [ set pcolor gray ] ; wall 2.1
+    if pxcor = 25 and pycor > 45 and pycor < 50 [ set pcolor gray ] ; wall 2.1
+    
+    if pxcor > 0 and pxcor < 20 and pycor = 14 [ set pcolor gray ] ; wall 2.3
+    if pxcor > 0 and pxcor < 20 and pycor = 21 [ set pcolor gray ] ; wall 2.3
+    if pxcor > 0 and pxcor < 20 and pycor = 25 [ set pcolor gray ] ; wall 2.3
+    if pxcor > 0 and pxcor < 20 and pycor = 32 [ set pcolor gray ] ; wall 2.3
+    if pxcor > 0 and pxcor < 20 and pycor = 39 [ set pcolor gray ] ; wall 2.3
+    
+    if pxcor > 24 and pxcor < 50 and pycor = 5 [ set pcolor gray ] ; wall 2.4
+    if pxcor > 24 and pxcor < 50 and pycor = 14 [ set pcolor gray ] ; wall 2.4
+    if pxcor > 24 and pxcor < 50 and pycor = 21 [ set pcolor gray ] ; wall 2.4
+    if pxcor > 24 and pxcor < 50 and pycor = 25 [ set pcolor gray ] ; wall 2.4
+    if pxcor > 24 and pxcor < 50 and pycor = 32 [ set pcolor gray ] ; wall 2.4
+    if pxcor > 24 and pxcor < 50 and pycor = 39 [ set pcolor gray ] ; wall 2.4
 
     ; Setting floor white
     if pcolor = black [ set pcolor white ]
