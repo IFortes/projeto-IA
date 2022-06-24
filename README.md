@@ -11,3 +11,14 @@ Foi modelado dois cenários. Sendo um de ambiente aberto (floresta) e outro de a
 O Departamento de Estatística, Matemática Aplicada e Computação da UNESP Rio Claro representa um ambiente fechado e com muitas condições que poderiam auxiliar na propagação do incêndio por todo o local, assim poderia-se simular como as pessoas se orientariam para sair do departamento em segurança. Nele iremos representar, 4 laboratórios didáticos que possuem computadores, mesas e cadeiras, elementos que podem alastrar o incêndio e 4 laboratórios temáticos,um com elementos de robótica, um como elementos de hardware (peças de microprocessadores), um com elementos de redes e um com elementos de eletrônica, o fogo que irá se expandir por todo o DEMAC e as pessoas, que será um número variável.
 
 O cenário de floresta é ideal para simular como um agente sinalizador atuaria recebendo informações de aumento de temperatura e aumento de substâncias tóxicas no ar, como por exemplo, o CO2 e também como ele poderia enviar um sinal representativo para que autoridades locais possam perceber o início do incêndio. Deste modo, iremos simular um ambiente que representará a vegetação da floresta, o fogo que irá queimá-la e um sinalizador.
+
+Portanto, cada cenário será simulado no NetLogo, cada um com sua característica própria. O cenário do DEMAC será desenvolvido a partir do modelo desenvolvido por Muhammad Tausif [1], enquanto o cenário da floresta terá como base um modelo disponibilizado pela biblioteca do Netlogo [2]  para seu desenvolvimento.
+
+#Referências
+[1]NetLogo Modeling Commons. (2022). fire-evacuation-updated. [Online].
+Disponível: http://modelingcommons.org/browse/one_model/6137#model_tabs_browse_info
+Acesso em 14 de Junho, 2022.
+
+[2]NetLogo. (2022). Fire - NetLogo Models Library. [Online].
+Disponível: https://ccl.northwestern.edu/netlogo/models/Fire
+Acesso em 14 de Junho, 2022.
