@@ -16,9 +16,13 @@ Portanto, cada cenário será simulado no NetLogo, cada um com sua característi
 
 # Referências
 [1]NetLogo Modeling Commons. (2022). fire-evacuation-updated. [Online].
+
 Disponível: http://modelingcommons.org/browse/one_model/6137#model_tabs_browse_info
+
 Acesso em 14 de Junho, 2022.
 
 [2]NetLogo. (2022). Fire - NetLogo Models Library. [Online].
+
 Disponível: https://ccl.northwestern.edu/netlogo/models/Fire
+
 Acesso em 14 de Junho, 2022.
