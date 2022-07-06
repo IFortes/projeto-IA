@@ -1,19 +1,21 @@
+;Globais
 globals [
-  initial-trees   ;; how many trees (green patches) we started with
-  burned-trees    ;; how many have burned so far
+  initial-trees   ;; Arvores - verdes
+  burned-trees    ;; Arvores queimdas
   setup-patches
 ]
 
-breed [fires fire]    ;; bright red turtles -- the leading edge of the fire
-breed [embers ember]  ;; turtles gradually fading from red to near black
+; Tipos
+breed [fires fire]    ;; Fogo - vermelho
+breed [embers ember]  ;; Brasa - preto
 
 to setup
   clear-all
   set-default-shape turtles "square"
-  ;; make some green trees
+  ; Aumentar densidade da floresta
   ask patches with [(random-float 100) < density]
     [ set pcolor green ]
-  ;; make a column of burning trees
+  ; Arvores em chamas
   ask patches with [pxcor = min-pxcor]
     [ ignite ]
   ask patches
@@ -21,15 +23,16 @@ to setup
      if pxcor >  100 and pxcor < 120  and pycor > 100 and pycor < 120
     [set pcolor yellow]
   ]
-  ;; set tree counts
+  ; Contagem de arvores
   set initial-trees count patches with [pcolor = green]
   set burned-trees 0
   reset-ticks
 
 end
 
+;Iniciar incendio
 to go
-  if not any? turtles  ;; either fires or embers
+  if not any? turtles  ;; Fogo ou brasa
     [ stop ]
   ask fires
     [ ask neighbors4 with [pcolor = green]
@@ -42,22 +45,23 @@ to go
   tick
 end
 
-;; creates the fire turtles
-to ignite  ;; patch procedure
+; Fogo
+to ignite  
   sprout-fires 1
     [ set color red ]
   set pcolor black
   set burned-trees burned-trees + 1
 end
 
-;; achieve fading color effect for the fire as it burns
+; Efeito para o fogo enquanto queima
 to fade-embers
   ask embers
-    [ set color color - 0.3  ;; make red darker
-      if color < red - 3.5     ;; are we almost at black?
+    [ set color color - 0.3  ;Vermelho mais escuro 
+      if color < red - 3.5     ;; Quase no preto
         [ set pcolor color
           die ] ]
 end
+;Sinal amarelo
 to signal
   ask patches
   [
@@ -65,6 +69,7 @@ to signal
     [set pcolor orange]
   ]
 end
+;Sinal vermelho
 to signal2
   ask patches
   [
